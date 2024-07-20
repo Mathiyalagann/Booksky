@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky.com</title>
+    <link rel="icon" href="image/booksky icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>BOOKSKY📚</h1>
+    </div>
+    <div class="container">
+        <div class="book-contains">
+            <h2>PONNIEN SELVAN</h2>
+            <h5>Kalki</h5>
+            <p>Ponniyin Selvan is a historical fiction novel written by Kalki Krishnamurthy. It is considered one of the greatest works in Tamil literature.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <button class="add-button" id="add-pop-button">+</button>
+    <div class="overlay"></div>
+    <div class="popbox">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-input">
+            <input type="text" placeholder="Book Author" id="author-input">
+            <textarea placeholder="Short Description" id="description-input"></textarea>
+        </form>
+        <button id="add-book">Add</button>
+        <button id="cancel-book">Cancel</button>
+    </div>
+    <script src="booksky.js"></script>
+</body>
+
+</html>
